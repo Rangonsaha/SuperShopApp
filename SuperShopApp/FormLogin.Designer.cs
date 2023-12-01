@@ -1,6 +1,6 @@
 ﻿namespace SuperShopApp
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.buttonRegister = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -62,18 +64,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(269, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 16);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "User Type";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(269, 259);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(269, 256);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -81,27 +85,53 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(269, 341);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Password";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnLogin
             // 
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(417, 414);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(325, 23);
+            this.btnLogin.Size = new System.Drawing.Size(325, 28);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // buttonRegister
+            // 
+            this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegister.Location = new System.Drawing.Point(417, 464);
+            this.buttonRegister.Name = "buttonRegister";
+            this.buttonRegister.Size = new System.Drawing.Size(325, 35);
+            this.buttonRegister.TabIndex = 7;
+            this.buttonRegister.Text = "Register";
+            this.buttonRegister.UseVisualStyleBackColor = true;
+            this.buttonRegister.Click += new System.EventHandler(this.ButtonRegister_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(447, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 58);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Login";
+            // 
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1137, 740);
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ClientSize = new System.Drawing.Size(1086, 740);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -109,8 +139,9 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormLogin";
+            this.Text = "Login";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,6 +156,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button buttonRegister;
+        private System.Windows.Forms.Label label4;
     }
 }
 
