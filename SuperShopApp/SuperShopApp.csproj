@@ -46,11 +46,84 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="FormAdminAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminAddProduct.Designer.cs">
+      <DependentUpon>FormAdminAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminAddProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminAddProductType.Designer.cs">
+      <DependentUpon>FormAdminAddProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminShowPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminShowPaymentDetails.Designer.cs">
+      <DependentUpon>FormAdminShowPaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminShowReviewRatings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminShowReviewRatings.Designer.cs">
+      <DependentUpon>FormAdminShowReviewRatings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminShowSupplierDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminShowSupplierDetails.Designer.cs">
+      <DependentUpon>FormAdminShowSupplierDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormApproveOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormApproveOrder.Designer.cs">
+      <DependentUpon>FormApproveOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerDashboard.Designer.cs">
+      <DependentUpon>FormCustomerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminDashboard.Designer.cs">
+      <DependentUpon>FormAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomerRatingAndReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerRatingAndReview.Designer.cs">
+      <DependentUpon>FormCustomerRatingAndReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderDeliverySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderDeliverySelection.Designer.cs">
+      <DependentUpon>FormOrderDeliverySelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderItems.Designer.cs">
+      <DependentUpon>FormOrderItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderPayment.Designer.cs">
+      <DependentUpon>FormOrderPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
@@ -60,8 +133,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdminAddProduct.resx">
+      <DependentUpon>FormAdminAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminAddProductType.resx">
+      <DependentUpon>FormAdminAddProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminShowPaymentDetails.resx">
+      <DependentUpon>FormAdminShowPaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminShowReviewRatings.resx">
+      <DependentUpon>FormAdminShowReviewRatings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminShowSupplierDetails.resx">
+      <DependentUpon>FormAdminShowSupplierDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormApproveOrder.resx">
+      <DependentUpon>FormApproveOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerDashboard.resx">
+      <DependentUpon>FormCustomerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminDashboard.resx">
+      <DependentUpon>FormAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomerRatingAndReview.resx">
+      <DependentUpon>FormCustomerRatingAndReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDeliverySelection.resx">
+      <DependentUpon>FormOrderDeliverySelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderItems.resx">
+      <DependentUpon>FormOrderItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderPayment.resx">
+      <DependentUpon>FormOrderPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
