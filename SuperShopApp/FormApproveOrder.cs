@@ -179,6 +179,11 @@ namespace SuperShopApp
                 MessageBox.Show("Order Declined Failed, Please Try Again!!");
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormAdminDasboard().Show();
+            this.Hide();
+        }
         private void FormApproveOrder_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

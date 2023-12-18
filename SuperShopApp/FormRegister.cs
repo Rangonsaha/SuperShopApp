@@ -90,6 +90,11 @@ namespace SuperShopApp
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new FormLogin().Show();
+            this.Hide();
+        }
 
         private void FormRegister_FormClosed(object sender, FormClosedEventArgs e)
         {

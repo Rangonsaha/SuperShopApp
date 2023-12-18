@@ -269,11 +269,16 @@ namespace SuperShopApp
             new FormOrderDeliverySelection().Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormCustomerDashboard().Show();
+            this.Hide();
+        }
+
         private void FormOrderItems_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
-        
     }
 }

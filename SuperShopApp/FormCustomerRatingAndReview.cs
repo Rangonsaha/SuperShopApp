@@ -27,20 +27,24 @@ namespace SuperShopApp
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     // Open the database connection
+
                     if (connection.State != ConnectionState.Open)
                     {
                         connection.Open();
                     }
                     // SQL query to select data from table
-                    string query = @"SELECT [id] FROM [Order] WHERE [paymentstatus] = 1 AND [orderstatus] = 2 AND rating IS NULL AND review IS NULL";
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                    string query = @"SELECT [id] FROM [Order] WHERE [paymentstatus] = 1 AND customerid = @customerid AND [orderstatus] = 2 AND rating IS NULL AND review IS NULL";
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        DataTable dataTable = new DataTable();
-                        adapter.Fill(dataTable);
-
-                        comboBox1.DisplayMember = "id";
-                        comboBox1.ValueMember = "id";
-                        comboBox1.DataSource = dataTable;
+                        command.Parameters.AddWithValue("@customerid", Data.customerdata.Rows[0]["id"].ToString());
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            comboBox1.DisplayMember = "id";
+                            comboBox1.ValueMember = "id";
+                            comboBox1.DataSource = dataTable;
+                        }
                     }
                 }
             }
@@ -115,6 +119,11 @@ namespace SuperShopApp
             {
                 MessageBox.Show("Failed to add Review Rating, Please Try Again!!");
             }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormCustomerDashboard().Show();
+            this.Hide();
         }
 
         private void FormCustomerRatingAndReview_FormClosed(object sender, FormClosedEventArgs e)

@@ -41,6 +41,11 @@ namespace SuperShopApp
                 }
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FormAdminDasboard().Show();
+            this.Hide();
+        }
 
         private void FormAdminShowSupplierDetails_FormClosed(object sender, FormClosedEventArgs e)
         {

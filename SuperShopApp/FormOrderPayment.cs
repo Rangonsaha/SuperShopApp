@@ -263,7 +263,11 @@ namespace SuperShopApp
                 MessageBox.Show("Please Pay Due Amount To Pay!!");
             }
         }
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormOrderDeliverySelection().Show();
+            this.Hide();
+        }
         private void FormOrderPayment_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

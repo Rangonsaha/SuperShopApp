@@ -49,6 +49,11 @@ namespace SuperShopApp
             new FormAdminShowPaymentDetails().Show();
             this.Hide();
         }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new FormLogin().Show();
+            this.Hide();
+        }
         private void FormAdminDasboard_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

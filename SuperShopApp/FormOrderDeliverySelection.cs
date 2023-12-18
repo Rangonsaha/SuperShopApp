@@ -89,6 +89,11 @@ namespace SuperShopApp
                 }
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new FormOrderItems().Show();
+            this.Hide();
+        }
 
         private void FormOrderDeliverySelection_FormClosed(object sender, FormClosedEventArgs e)
         {
